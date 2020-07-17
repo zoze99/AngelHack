@@ -1,7 +1,8 @@
 
 body {
     margin:0px;
-    
+    display:flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -53,6 +54,10 @@ a {
           color: white;
 }
 
+.navbar_menu li:hober {
+    color: babypink;
+}
+
 .navbar_icons {
     display:flex;
     justify-content: flex-start;
@@ -66,4 +71,69 @@ a {
     padding-right: 20px;
 }
 
+.navbar_menu a:hover {
+    color: wheat;
+}
 
+.banner_text{
+    position:absolute;
+    width: 100%;
+    top: 155px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+.banner_title {
+    margin:0;
+    font-family: Noto Sans KR, san-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 5.2vw;
+          text-align: center;
+          color: wheat;
+          text-shadow: black;
+}
+
+.banner_title:hover{
+    text-decoration: underline;
+}
+
+.banner_description {
+    top: 46vh; margin:0;
+    font-family: Noto Sans KR, san-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 2.4vw;
+          text-align: center;
+          color: white;
+          text-shadow: black;
+}
+
+.contents{
+    margin:25px 15vw;
+}
+
+.contents .container{
+    display: grid;
+    height: 100vh;
+    grid-gap: 10px;
+    grid-template-rows: 1fr 8fr 1fr 8fr 1fr 8fr;
+}
+
+.contents .box {
+    background-color: rgb(236, 236, 236);
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.contents .box_title {
+        margin: 5px;
+        font-family: Noto Sans KR, san-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2vh;
+          text-align: start;
+          color: black;
+}
