@@ -17,7 +17,6 @@ body {
 a {
     text-decoration: none;
     color: white;
-
 }
 
 .navbar_logo {
@@ -37,7 +36,6 @@ a {
     padding: 15px;
 }
 
-
 .navbar_menu {
     display:flex;
     justify-content: flex-start;
@@ -46,7 +44,7 @@ a {
 }
 
 .navbar_menu li {
-    padding: 8px 12px;
+    padding: 8px 13px;
     font-family: Quicksand, san-serif;
           font-style: normal;
           font-weight: bold;

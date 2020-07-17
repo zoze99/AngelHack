@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Sign Up</title>
   </head>
   <body>
@@ -16,37 +17,54 @@
           }
       
 
-      h1{
-        padding-top:20vh;
-        padding-bottom:0px;
-        margin-bottom:0px;
-          font-family: Noto Sans KR;
-          font-style: normal;
-          font-weight: bold;
-          font-size: 96px;
-          line-height: 139px;
-          text-align: center;
-        }
-
-      p{
-        text-align:center;
-        font-family: Noto Sans KR;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 35px;
-        text-align: center;
-        letter-spacing: -0.05em;
-
-      }
-      
-      .container {
+        .container {
         display: flex;
         flex-direction: column;
         align-items:center;
         justify-content:center;
       }
 
+        
+      h1{
+        padding-top:20vh;
+        padding-bottom:0px;
+        margin-bottom:0px;
+          font-family: Quicksand, san-serif;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 70px;
+          line-height: 139px;
+          text-align: center;
+        }
+
+      h3{
+        text-align:center;
+        margin: 0px;
+
+        font-family: Quicksand, san-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: -0.05em;
+      }
+
+      p {
+        display:inline;
+        text-align:center;
+        margin-right:5px;
+
+        font-family: Quicksand, san-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+        letter-spacing: -0.05em;
+
+      }
+      
 
       button{
         background-color: #AFC6B9;
@@ -54,18 +72,17 @@
         position: absolute;
         width: 110px;
         height: 47px;
-        top: 560px;
+        top: 625px;
 
         border-radius: 60px;
-        box-shadow:0;
 
-        font-family: Noto Sans KR;
+        font-family: Quicksand, san-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 35px;
         text-align: center;
-        letter-spacing: -0.05em;
+
         color: #FFFFFF;
         
       }
@@ -79,23 +96,33 @@
         outline:none;
       } 
 
+      .e-mail {
+        margin-top:20px;
+      }
+
       
     </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <div class="container">
-        <h1>Sign Up</h1>
-        <p>for AngelHack Seoul 2021</p>
+        <h1>Welcome to AngelHack Seoul 2021!</h1>
+        <h3>If it is your first visit, please sign up.</h3>
+        <h3>You can check your own enter code via e-mail.</h3>
     
         <div class="e-mail">
-            <p style="display:inline; margin-right:5px; font-weight:900; font-size: 20px" font-family: arial monospace;>e-mail </p>
+            <p>e-mail </p>
             <input style="text-align:center;"></input>
         </div>
         <div class="password">
-            <p style="display:inline; margin-right:5px; font-weight:900; font-size: 20px" font-family: arial monospace;>password </p>
+            <p>password </p>
             <input style="text-align:center;"></input>
         </div>
+        <div class="entercode">
+          <p>Enter Code </p>
+          <input style="text-align:center;"></input>
+        </div>
+        
 
         <button>Join</button>
 
