@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <title>Sign Up</title>
   </head>
   <body>
@@ -11,43 +13,47 @@
 
       body{
           position: relative;
-          width: 1440px;
-          height: 1024px;
-          background: #FFECDC;
+          background: black;
           }
       
+          .container {
+          display: flex;
+          flex-direction: column;
+          align-items:center;
+          justify-content:center;
+        }
 
-        .container {
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-        justify-content:center;
-      }
-
+        img{
+        width:170px;
+        height:60px;
+        margin-top:130px;
+        }
         
       h1{
-        padding-top:20vh;
+        padding-top:14vh;
         padding-bottom:0px;
         margin-bottom:0px;
-          font-family: Quicksand, san-serif;
+          font-family: montserrat, san-serif;
           font-style: normal;
-          font-weight: bold;
-          font-size: 70px;
+          font-weight: 700;
+          font-size: 4vw;
           line-height: 139px;
           text-align: center;
+          color:white;
         }
 
       h3{
         text-align:center;
         margin: 0px;
 
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
+        font-weight: 300;
+        font-size: 1.5vw;
         line-height: 35px;
         text-align: center;
         letter-spacing: -0.05em;
+        color:white;
       }
 
       p {
@@ -55,28 +61,30 @@
         text-align:center;
         margin-right:5px;
 
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         font-style: normal;
-        font-weight: 900;
-        font-size: 20px;
+        font-weight: 700;
+        font-size: 1.5vw;
         line-height: 35px;
         text-align: center;
         letter-spacing: -0.05em;
+        color:white;
 
       }
       
 
       button{
-        background-color: #AFC6B9;
+        background-color: #7568FA;
         margin:0;
         position: absolute;
         width: 110px;
         height: 47px;
-        top: 625px;
+        top: 610px;
 
         border-radius: 60px;
+        border:0.3px solid white;
 
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -88,10 +96,10 @@
       }
 
       input:hover{
-        border:3px solid #AFC6B9;
+        border:3px solid #7568FA;
       }
       input:focus{
-        background-color:#AFC6B9;
+        background-color:#7568FA;
         color:white;
         outline:none;
       } 
@@ -104,7 +112,8 @@
     </style>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
+    <div class="blank" style="height:7vh"></div>
     <div class="container">
         <h1>Welcome to AngelHack Seoul 2021!</h1>
         <h3>If it is your first visit, please sign up.</h3>
@@ -126,10 +135,11 @@
 
         <button>Join</button>
 
+        <img src="/images/logo.png"></img>
 
     </div>
 
-
+   
 
 
 

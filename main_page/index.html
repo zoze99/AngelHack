@@ -7,12 +7,13 @@
       <title>AngelHack Seoul 2021</title>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
     <style>
-      body{margin:0px; padding:0px; font-family: 'Noto Sans KR', sans-serif; background: #FFECDC;}
+      body{margin:0px; padding:0px; background: black;}
       
       .container {
         display: flex;
@@ -23,60 +24,69 @@
         height: 100vh;
       }
       .blank{
-        height:10vh;
+        height:4vh;
+      }
+
+      img{
+        width:170px;
+        height:60px;
+        margin-top:70px;
       }
 
       input:hover{
-        border:3px solid #AFC6B9;
+        border:3px solid  #7568FA;
       }
       input:focus{
-        background-color:#AFC6B9;
+        background-color: #7568FA;
         color:white;
         outline:none;
       }
 
 
       button{
-        background-color: #AFC6B9;
+        background-color: #7568FA;
         margin:10px;
         padding:5px 15px;
 
         border-radius: 60px;
+        border:0.3px solid white;
 
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         font-style: normal;
-        font-weight: bold;
+        font-weight: 600;
         font-size: 24px;
         line-height: 35px;
         text-align: center;
 
-        color: #FFFFFF;
+        color: white;
         
       }
 
       h1{
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         text-align:center;
-        font-weight:900;
+        font-weight:700;
         font-size:4vw;
+        color:white;
       }
 
       h3{
-        font-family: Quicksand, san-serif;
+        font-family: montserrat, san-serif;
         text-align:center;
         margin-bottom:20px; font-weight:300;
         font-size:1.5vw;
+        color:white;
       }
 
       p{
-        font-family: Quicksand, san-serif;
-        font-weight:900;
+        font-family: montserrat, san-serif;
+        font-weight:700;
         font-size:1.5vw;
 
         text-align:center;
         display:inline;
         margin-right:4px;
-        
+        color:white;
       }
 
       input{
@@ -93,6 +103,7 @@
 
     <div class="container">
       <div class="blank"></div>
+      
       <div class="introduction">
         <h1> Welcome to AngelHack Seoul 2021!</h1>
         <h3> If it is your first visit, please Sign Up first.</h3>
@@ -100,7 +111,7 @@
 
       <form>
         <div class="ID">
-          <p>ID</p>
+          <p>e-mail</p>
           <input></input>
         </div>
         <div class="password">
@@ -111,7 +122,7 @@
         <button>Sign Up</button>
       </form>
 
-
+      <img src="/images/logo.png"></img>
 
     </div>
 
