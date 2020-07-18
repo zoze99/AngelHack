@@ -18,3 +18,4 @@ floating button 생성 완료 (7/18 21:18)<br>
 WENNO 브랜딩 맞춰서 전체 디자인 수정<br>
 Create New Team 페이지 추가 (7/19 01:57)<br>
 채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br>
+메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)<br>
