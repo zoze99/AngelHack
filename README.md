@@ -15,5 +15,5 @@ AngelHack Seoul 2020 codes<br>
 1) 메인 페이지 블록 콘텐츠 객체 생성 완료
 2) floating button 생성 완료 (7/18 21:18)<br>
 <br>
-1) WENNO 브랜딩 맞춰서 전체 디자인 수정
-2) Create New Team 페이지 추가 (7/19 01:57)
+1) WENNO 브랜딩 맞춰서 전체 디자인 수정<br>
+2) Create New Team 페이지 추가 (7/19 01:57)<br>
