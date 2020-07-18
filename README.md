@@ -1,7 +1,7 @@
 # AngelHack
 AngelHack Seoul 2020 codes<br>
 
-<h1>2020 AngelHack repository for team AOAS</h1>
+<h1>2020 AngelHack Repository for TEAM AOAS</h1>
 <h2>주제 : 해커톤 대상 온라인 자동 팀매칭 솔루션</h2>
 <b>AngelHack Seoul 2020 codes</b>
 <ul>
