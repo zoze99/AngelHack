@@ -11,6 +11,11 @@ AngelHack Seoul 2020 codes<br>
   <li><h4>프론트엔드 엔지니어 : 조정민</h4></li>
   <li><h4>백엔드 및 서버 엔지니어 : 정영준, 설민혁</h4></li>
 </ul>
+<h2>디자인 시스템<br></h2>
+<ul>
+  <li>폰트: Noto Sans KR, Montserrat, San Serif</li>
+  <li>컬러: 보라 #7568FA 레몬 #FFFC79</li>
+</ul>
 <h2>기술사양<br></h2>
 <ul>
   <li><b>node.js : v12.18.2<br>
@@ -37,6 +42,7 @@ AngelHack Seoul 2020 codes<br>
   <li>채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br></li>
   <li>메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)<br></li>
   <li>동료 추천 블록 레이아웃 수정<br></li>
+  <li>프로필 페이지 추가 (7/19 08:56)<br></li>
 </ul>
 
 <h3> 2. BackEnd </h3>
