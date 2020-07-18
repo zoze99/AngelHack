@@ -1,0 +1,102 @@
+<html>
+<head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font: 13px Helvetica, Arial;
+    }
+    form {
+      background: #000;
+      padding: 3px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    form input {
+      border: 0;
+      padding: 10px;
+      width: 90%;
+      margin-right: .5%;
+    }
+    form button {
+      width: 9%;
+      background: rgb(130, 224, 255);
+      border: none;
+      padding: 10px;
+    }
+    #messages {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    #messages li {
+      padding: 5px 10px;
+    }
+    #messages li:nth-child(odd) {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+<select id="rm">
+  <option value="Room1">Room1</option>
+  <option value="Room2">Room2</option>
+  <option value="Room3">Room3</option>
+  <option value="Room4">Room4</option>
+  <option value="Room5">Room5</option>
+  <option value="Room6">Room6</option>
+  <option value="Room7">Room7</option>
+  <option value="Room8">Room8</option>
+</select>
+<a href="/make_team" onclick="javascript:event.target.port=3100">팀 수락</a>
+<ul id="messages"></ul>
+<!-- <a href="/new" -->
+<form action="">
+  <input id="m" autocomplete="off"/>
+  <button>Send</button>
+</form>
+<form action></form>
+<script src="/socket.io/socket.io.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script>
+  $(() => {
+    const name = prompt('What your name');
+    const socket = io();
+    let room = ['room1', 'room2','room3','room4','room5','room6','room7','room8'];
+    let num = 1;
+    // let selectoption = document.getElementById("rm");
+    socket.emit('joinRoom', num, name);
+    $('select').change(() => {
+      socket.emit('leaveRoom', num, name);
+      // num = Number($('select').text[4]);
+      num = Number($('#rm option:selected').val()[4]);
+      console.log(num);
+      // num++;
+      // num = num%2;
+      socket.emit('joinRoom', num, name);
+    });
+    $('form').submit(() => {
+      socket.emit('chat message', num, name, $('#m').val());
+      $('#m').val('');
+      return false;
+    });
+    socket.on('chat message', (name, msg) => {
+      $('#messages').append($('<li>').text(name + '  :  ' +
+        msg));
+    });
+    socket.on('leaveRoom', (num, name) => {
+      $('#messages').append($('<li>').text(name + '    leaved '
+        + room[num-1] + ' :('));
+    });
+    socket.on('joinRoom', (num, name) => {
+      $('#messages').append($('<li>').text(name + '    joined '
+        + room[num-1] + ':)'));
+    });
+  });
+</script>
+</body>
+</html>

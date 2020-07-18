@@ -4,7 +4,7 @@ body {
     margin:0px;
     display:flex;
     flex-direction: column;
-    background: white;
+    background-color: black;
 }
 
 .navbar {
@@ -38,6 +38,7 @@ a {
     height: 60px;
     margin-left:20px;
     padding: 0px;
+  
 }
 
 .navbar_menu {
@@ -85,11 +86,6 @@ a {
 
 
 
-
-#blackbox{
-    background-color:rgba(0, 0, 0, 0.8);
-}
-
 .banner_text{
     position:absolute;
     width: 100%;
@@ -100,30 +96,32 @@ a {
     justify-content: center;
 }
 
-.banner_title {
-    margin:0;
+.banner_title { /*배너 타이틀*/
+    margin-top:50px;
+    margin-bottom:15px;
     font-family: Noto Sans KR, san-serif;
           font-style: normal;
           font-weight: bold;
-          font-size: 5.2vw;
+          font-size: 4.7vh;
           text-align: center;
-          color: wheat;
-          text-shadow: black;
+          color: #FFFC79;
+}
+#first_title{
+    margin-top:20px;
 }
 
 .banner_title:hover{
-    text-decoration: underline;
+    color:#7568FA;
 }
 
-.banner_description {
+.banner_description { /*배너 텍스트*/
     top: 46vh; margin:0;
-    font-family: Noto Sans KR, san-serif;
+    font-family: Montserrat, san-serif;
           font-style: normal;
           font-weight: 300;
-          font-size: 2.4vw;
+          font-size: 2vw;
           text-align: center;
           color: white;
-          text-shadow: black;
 }
 
 .contents{
@@ -145,12 +143,13 @@ a {
 
 .contents .box_title {
         margin: 18px 5px;
+        margin-top: 100px;
         font-family: Noto Sans KR, san-serif;
           font-style: normal;
           font-weight: 700;
-          font-size: 2.5vh;
+          font-size: 3vh;
           text-align: start;
-          color: black;
+          color: white;
 }
 
 
@@ -160,6 +159,7 @@ a {
 .list_item{
     display:flex;
     padding-bottom: 15px;
+    padding-left: 0px;
 }
 
 .list_item li{
@@ -167,7 +167,6 @@ a {
 
     list-style:none;
     margin: 10px;
-    box-shadow: 1px 1px 3px rgb(199, 199, 199);
 }
 
 .list_item li:nth-child(-n+3){margin-top:0}
@@ -193,10 +192,11 @@ a {
 }
 
 .list_item li{
-    background: #;
+    background: #FFFC79;
     border-radius: 20px;
     padding: 15px;
-    margin: 5px;
+    padding-bottom: 5px;
+    margin: 0px 10px;
 
 }
 
@@ -205,7 +205,7 @@ a {
     display: inline;
     margin: 10px;
     padding: 10px 40px;
-    background: black;
+    background: #7568FA;
     border-radius: 60px;
 
     color: white;
@@ -222,7 +222,9 @@ a {
     float: right;
     text-align: right;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom:0.5px solid black;
 }
 
 .item_info, .item_option{
@@ -232,6 +234,7 @@ a {
     font-size:1.7vh;
     font-family: montserrat;
     font-weight: 500;
+    margin-bottom: 5px;
 }
 
 .list_item .item_txt{
@@ -239,6 +242,7 @@ a {
     text-align: right;
     font-weight: 700;
     margin-bottom: 5px;
+    padding-top:0px;
 }
 
 .link_item .relation_type{
@@ -261,17 +265,20 @@ a {
     background-color: white;
     padding:2px 6px;
     border-radius: 10px;
+    border: 1px solid black;
     font-weight: 700;
-    color: rgb(156, 196, 64);
+    color:  black;
 }
 
 .item_option .ico_apply{
     display:inline-block;
     background-color: white;
     padding:2px 6px;
+    margin-left: 8px;
     border-radius: 10px;
+    border: 1px solid black;
     font-weight: 700;
-    color: rgb(156, 196, 64);
+    color:  black;
 }
 
 .item_option .num_option{
@@ -282,20 +289,74 @@ a {
 
 /*block contents ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* 동료 소개 block contents Start */
+
+#list_item_colleagues .tit_title{
+    text-align:center;
+    font-size: 3.5vh;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+#list_item_colleagues li{
+    background-color:#7568FA;
+}
+
+#list_item_colleagues .tit_title{
+    color:white;
+}
+
+#list_item_colleagues .tit_intro{
+    color:white;
+}
+
+#human_factor{
+    color:white;
+    border: 1px solid white;
+}
+
+#colleague p{
+    background:#FFFC79;
+    color: black;
+}
+
+
+
 .float{
 	position:fixed;
 	width:223px;
 	height:60px;
-	bottom:30px;
-	right:40px;
-    background-color:#AFC6B9;
+	bottom:60px;
+	right:60px;
+    background-color:#7568FA;
     color:#FFF;
-	border-radius:50px;
+    border-radius:50px;
+    border: 1px solid black;
     text-align:center;
     line-height: 60px;
-    box-shadow: 2px 2px 3px #999;
+
     
     font-size:18px;
     font-family: Noto Sans KR;
     font-weight: 700;
 }
+
+.float:hover{
+    background-color: #FFFC79;
+    color: black;
+}
+
+
+
+/* 내가 만든 프로젝트 대시보드 my_project dashboard 
+
+.my_project{
+    display:flex;
+}
+
+.item_project{
+    background-color:#7568FA;
+    background: #7568FA;
+}*/
+
