@@ -8,10 +8,9 @@ AngelHack Seoul 2020 codes<br>
 정민 드디어 깃허브 push 성공하다 (7/18 4:34)<br>
 메인 페이지(nav_home.html)<br>
 1) 네비게이터 바 메뉴 링크 추가(아직 연결페이지 구축X) <br>
-2)배너(타이틀 클릭 시 팀모집 등록 페이지로 이동 구축 필요)<br>
+2) 배너(타이틀 클릭 시 팀모집 등록 페이지로 이동 구축 필요)<br>
 3) 1차 그리드 구축(박스아이템 추가 예정) (7/18 07:48)<br>
 
 로그인 백엔드 구축 완료(7/18 17:17)<br>
-online prototype:
-https://zoze99.github.io/AngelHack/
-
+1) 메인 페이지 블록 콘텐츠 객체 생성 완료
+2) floating button 생성 완료(7/18 21:18)<br>
