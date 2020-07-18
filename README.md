@@ -36,6 +36,7 @@ AngelHack Seoul 2020 codes<br>
   <li>Create New Team 페이지 추가 (7/19 01:57)<br></li>
   <li>채팅창에서 팀 빌딩 성사 시 이동할 페이지 congratulations.html 추가 (7/19 02:31)<br></li>
   <li>메인 페이지 동료 소개 블록 추가, 배너 수정 (7/19 05:42)<br></li>
+  <li>동료 추천 블록 레이아웃 수정<br></li>
 </ul>
 
 <h3> 2. BackEnd </h3>
