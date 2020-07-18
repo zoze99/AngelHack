@@ -1,4 +1,3 @@
-
 body {
     margin:0px;
     display:flex;
@@ -75,6 +74,10 @@ a {
     color: wheat;
 }
 
+#blackbox{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+
 .banner_text{
     position:absolute;
     width: 100%;
@@ -122,18 +125,157 @@ a {
     grid-template-rows: 1fr 8fr 1fr 8fr 1fr 8fr;
 }
 
-.contents .box {
-    background-color: rgb(236, 236, 236);
+.contents .group {
+    /*background-color: rgb(236, 236, 236);*/
     margin: 0px;
     margin-bottom: 20px;
 }
 
 .contents .box_title {
-        margin: 5px;
+        margin: 18px 5px;
         font-family: Noto Sans KR, san-serif;
           font-style: normal;
           font-weight: 700;
-          font-size: 2vh;
+          font-size: 2.5vh;
           text-align: start;
           color: black;
+}
+
+
+/*block contents -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.group{max-width:1450px;margin:0 auto;text-align:center}
+
+.list_item{
+    display:flex;
+    padding-bottom: 15px;
+}
+
+.list_item li{
+    float:left; position:relative; width:31.1%; margin:4.414% 0 0 3.32%; text-align:left;
+
+    list-style:none;
+    margin: 10px;
+    box-shadow: 1px 1px 3px rgb(199, 199, 199);
+}
+
+.list_item li:nth-child(-n+3){margin-top:0}
+.list_item li:nth-child(3n+1){margin-left:0}
+
+.list_item .middle_tit{
+    margin-bottom:10px;
+}
+
+.list_item .tit_title{
+    font-size:2vh;
+    font-family: Noto Sans KR;
+    font-weight: 700;
+    color: black;
+    margin-top: 10px;
+}
+
+.list_item .tit_intro{
+    font-size:1.7vh;
+    font-family: Noto Sans KR;
+    font-weight: 500;
+    color: black;
+}
+
+.list_item li{
+    background: wheat;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 5px;
+
+}
+
+.link_item .relation_type{
+    margin: 5px 0px; margin-left:7px;
+    font-size:1.7vh;
+    font-family: Noto Sans KR;
+    font-weight: 300;
+    border:1px solid #AFC6B9;
+    color:#AFC6B9;
+
+    display:inline-block;height:30px;
+    padding:0px 7px;
+    line-height:28px;
+}
+
+.link_item .relation_type:first-of-type{margin-left:0}
+
+.group .load_more p{
+    display: inline;
+    margin: 10px;
+    padding: 10px 40px;
+    background: black;
+    border-radius: 60px;
+
+    color: white;
+    font-family: Noto Sans KR;
+}
+
+.list_item .inner_option{
+    margin:5px 0px;
+    float: right;
+}
+
+.list_item .item_date{
+    float: right;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item_info, .item_option{
+    color: black;
+    font-size:1.7vh;
+    font-family: Quicksand;
+    font-weight: 500;
+}
+
+.list_item .item_txt{
+    text-align: right;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.item_option .ico_chat{
+    background-color: white;
+    padding:2px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: rgb(156, 196, 64);
+}
+
+.item_option .ico_apply{
+    background-color: white;
+    padding:2px 6px;
+    border-radius: 10px;
+    font-weight: 700;
+    color: rgb(156, 196, 64);
+}
+
+.item_option .num_option{
+    font-family: Quicksand;
+    font-weight: bold;
+}
+
+
+/*block contents ---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.float{
+	position:fixed;
+	width:223px;
+	height:60px;
+	bottom:30px;
+	right:40px;
+    background-color:#AFC6B9;
+    color:#FFF;
+	border-radius:50px;
+    text-align:center;
+    line-height: 60px;
+    box-shadow: 2px 2px 3px #999;
+    
+    font-size:18px;
+    font-family: Noto Sans KR;
+    font-weight: 700;
 }
