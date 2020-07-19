@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
-    <title>Collab Apply Sent!</title>
+
+    <title>Sorry!</title>
 </head>
+
+
+
 <body>
+    
     <nav class="navbar">
 
         <div class="navbar_logo">
             <a href="nav_home.html"><img src="/images/logo.png"></img></a>
         </div>
-    
+
         <ul class="navbar_menu">
             <li><a href="nav_home.html">Home</a></li>
             <li><a href="nav_members.html">Members</a></li>
@@ -34,71 +38,61 @@
     </nav>
 
     <style>
-
         body{
             margin:0px;
             background:black;
             background-image: url('/images/universe.png');
         }
-        
+
         .container{
-            display: flex;
-            justify-content: center;
+            display:flex;
+            flex-direction: column;
             align-items: center;
-            width: 100vw;
-            height: 100vh;
+            justify-content: center;
+            margin: 30vh 0px;
         }
 
-        .notification{
-            width: 500px;
-            height: 300px;
-            position: relative;
-            align-items: center;
-            justify-content: center;
+        h1{
+            text-align:center;
+            margin: 0px;
 
-
-            background-color: #FFFC79;
-            border-radius: 30px;
+            font-family: Montserrat, Noto Sans KR, sans-serif;
+            font-size: 60px;
+            font-weight: 900;
+            color: white;
         }
 
         p{
-            display: inline;
-            position: absolute;
-            top: 55px;
-            left: 80px;
+            text-align:center;
+            margin: 20px 0px;
 
-            font-family: Noto Sans KR, san-serif;
-            font-style: normal;
-            font-weight: 700;
+            font-family: Montserrat, Noto Sans KR, sans-serif;
             font-size: 20px;
-            text-align: center;
-            color: black;
+            font-weight: 100;
+            color: white;
         }
 
-        .back_button{
-            display: inline;
-            position: absolute;
-            top: 190px;
-            left: 170px;
-            
-            padding: 10px 40px;
-            background-color: #7568FA;
-            border-radius: 60px;
+        .e-mail{
+            width: 400px;
+            height: 30px;
 
-            color: white;
-            font-family: Noto Sans KR;
+            background-color: #FFFC79;
+            font-family: Montserrat, Noto Sans KR, sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #7568FA;
+            text-align: center;
         }
 
     </style>
-
     
     <div class="container">
-        <div class="notification">
-            <p>짝짝짝! 👏🏻👏👏🏿 User1님께<br>나의 Working Profile을 푸시했습니다!<br>답장이 오길 기다려봐요😘</p>
-            <a href="nav_mypage.html" class="back_button">뒤로가기</a>
-        </div>
-        
+        <h1>Sorry! We're under Construction.</h1>
+        <p>여기까지 찾아와 주셔서 감사합니다! 이곳은 아직 준비중인 페이지입니다. <br>정식으로 오픈하면 가장 먼저 알려드릴게요.<br>아래 박스에 이메일을 남긴 후 엔터를 눌러주세요 :) <br></p>
+        <input class="e-mail"></input>
     </div>
+    
+
 
 
 </body>
