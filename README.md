@@ -50,6 +50,8 @@ AngelHack Seoul 2020 codes<br>
   <li> nav_home.html에 내가 만든 프로젝트 대시보드 추가<br></li>
   <li>검사하러 가기 페이지 추가 (typeform_bridge.html)<br></li>
   <li>under construction 페이지 추가 (construction.html)<br></li>
+  <li>필요한 부분 construction.html로 링크 완료<br><li>
+  <li>nav_mypage와 nav_home 텍스트 전체적으로 추가 완료<br><li>
   
 </ul>
 
