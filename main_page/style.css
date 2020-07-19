@@ -372,6 +372,7 @@ a {
     color:white;
     margin-left: 10px;
     margin-bottom: 20px;
+    margin-top: 45px;
 
     font-family: Noto Sans KR, san-serif;
     font-style: normal;
@@ -398,7 +399,7 @@ a {
 .my_project_script{
     position: relative;
     width: 80%;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 5px 0px;
     padding:0px 0px 20px 0px;
     border-radius: 0px 0px 10px 10px;
 
@@ -414,7 +415,7 @@ a {
 .applied_users{
     display:flex;
     width:80%;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     flex-direction:row;
     justify-content: space-between;
 }
@@ -424,6 +425,7 @@ a {
     width:80%;
     flex-direction:row;
     justify-content: space-between;
+    margin-bottom: 35px;
 }
 
 .rocket_users img{
@@ -448,3 +450,38 @@ a {
 }
 
 
+#rocket_users_button p{
+    display: block;
+    margin: 0px;
+    
+    padding: 8px 20px;
+    background: white;
+    border-radius: 60px;
+
+    color: black;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#rocket_users_button:hover{
+    background: #FFFC79;
+}
+
+#applied_users_button p{
+    display: block;
+    margin: 0px;
+    
+    padding: 8px 20px;
+    background: white;
+    border-radius: 60px;
+
+    color: black;
+    font-family: Noto Sans KR;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#applied_users_button:hover{
+    background: #FFFC79;
+}
