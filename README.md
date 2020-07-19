@@ -46,6 +46,11 @@ AngelHack Seoul 2020 codes<br>
   <li>개인 프로필 페이지 추가 (7/19 08:56)<br></li>
   <li>프로필 페이지 > Let's Collab 버튼 액션 페이지 추가 (7/19 15:57)<br></li>
   <li>메인 페이지 > 동료 추천 블록 타이틀 클릭 시 동료 프로필 페이지 이동 링크 추가 (7/19 15:57)<br></li>
+  <li>nav_home.html 콘텐츠 텍스트 수정<br></li>
+  <li> nav_home.html에 내가 만든 프로젝트 대시보드 추가<br></li>
+  <li>검사하러 가기 페이지 추가 (typeform_bridge.html)<br></li>
+  <li>under construction 페이지 추가 (construction.html)<br></li>
+  
 </ul>
 
 <h3> 2. BackEnd </h3>
